@@ -1,0 +1,111 @@
+/* Template of item */
+    /* Button */
+.btn_base {
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    transition: background-color 0.15s ease-in-out;
+}
+
+    /* Product wrapped */
+.item_wrapped {
+    padding: 8px 20px;
+    margin: 0 8px;
+    background-color: var(--white-grey-color);
+}
+
+.item_wrapped__desc-wrap {
+    margin: 12px 0;
+}
+
+.item_wrapped__desc-wrap > div {
+    width: 100%;
+    text-align: center;
+}
+
+.item_wrapped__desc-wrap__title {
+    width: 90% !important;
+    white-space: nowrap; /* Ngăn chữ tràn ngắt xuống dòng */
+    overflow: hidden; /* Ẩn phần nội dung vượt quá kích thước của phần tử */
+    text-overflow: ellipsis; /* Hiển thị dấu ba chấm (...) khi vượt quá */
+}
+
+.item_wrapped__desc-wrap__code {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.item_wrapped__desc-wrap__price {
+    color: var(--red-color);
+}
+
+/* Iten's Characteristic properties */
+    /* Button */
+.accept_btn {
+    border-color: var(--green-color);
+}
+
+.deny_btn {
+    border-color: var(--yellow-color);
+}
+
+.delete_btn {
+    border-color: var(--red-color);
+}
+
+.addNew_btn {
+    border-color: var(--green-color);
+}
+
+.orderNow_btn {
+    border-color: var(--red-color);
+}
+
+.showMore_btn {
+    border-color: var(--navy-color);
+}
+
+.backTo_btn {
+    border-color: var(--grey-color);
+}
+
+/* Hover item */
+    /* Button */
+.btn_base:hover {
+    color: var(--white-color);
+}
+
+.accept_btn:hover {
+    background-color: var(--green-color);
+}
+
+.deny_btn:hover {
+    background-color: var(--yellow-color);
+}
+
+.delete_btn:hover {
+    background-color: var(--red-color);
+}
+
+.addNew_btn:hover {
+    background-color: var(--green-color);
+}
+
+.orderNow_btn:hover {
+    background-color: var(--red-color);
+}
+
+.showMore_btn:hover {
+    background-color: var(--navy-color);
+}
+
+.backTo_btn:hover {
+    background-color: var(--grey-color);
+}
+
+/* Active item */
+    /* Button */
+.btn_base:active {
+    scale: 0.9;
+}
