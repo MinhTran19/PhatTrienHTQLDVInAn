@@ -1,0 +1,40 @@
+/* Xử lý hiệu chỉnh css cho header */
+.header-container {
+    padding: 0 24px;
+    border-bottom: 1px solid var(--text-color);
+    box-shadow: 0px 2px 4px rgba(34, 24, 114, 0.1);
+}
+
+.header-left, .header-right {
+    width: 20%;
+}
+
+.header-center {
+    width: 80%;
+}
+
+.navbar-wrapped .navbar-wrapped__item {
+    margin: 0 8px;
+}
+
+.authentication-wrapped .signUp {
+    border-left: 1px solid var(--text-color);
+    margin-left: 12px;
+    padding-left: 12px;
+}
+
+/* Hover item of components */
+.authentication-wrapped .signUp a:hover, 
+.authentication-wrapped .signIn a:hover {
+    color: var(--red-color);
+}
+
+.navbar-wrapped .navbar-wrapped__item a:hover {
+    color: var(--red-color);
+}
+
+/* Active item of components */
+.authentication-wrapped .signUp a:active, 
+.authentication-wrapped .signIn a:active {
+    text-decoration: underline;
+}

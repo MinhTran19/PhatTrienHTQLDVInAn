@@ -23,16 +23,20 @@
         @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css'])
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/library.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/header.css') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
         <script src="{{ asset('js/app.js') }}"></script>
     </head>
     <body class="antialiased">
-        <header></header>
-
+        <header>
+            @include('layouts.header')
+        </header>
+        
         <main>
             <div class="container">
-                <div class="wrapped">
+                <h2>Nội dung</h2>
+                {{-- <div class="wrapped">
                     <button class="showMore_btn btn_base">
                         Show more
                     </button>
@@ -56,7 +60,151 @@
                     </button>
                 </div>
                 <div class="wrapper">
-                    <section class="products-list d-flex__wrap d-flex__just">
+                    <section class="products-list d-flex__wrap d-flex__between gap">
+                        <figure class="item_wrapped">
+                            <div class="item_wrapped__img-wrap">
+                                <img src="{{ asset('storage/imgs/product_img.png') }}" alt="product_img">
+                            </div>
+                            <div class="item_wrapped__desc-wrap d-flex__wrap d-flex__just">
+                                <div class="item_wrapped__desc-wrap__title">
+                                    Vải áo dài họa tiết công vũ xuân hạ
+                                </div>
+                                <div class="item_wrapped__desc-wrap__code">
+                                    Mã sản phẩm: HT0001
+                                </div>
+                                <div class="item_wrapped__desc-wrap__price">
+                                    230.000 VNĐ
+                                </div>
+                            </div>
+                            <div class="item_wrapped__actions-wrap d-flex__nowrap d-flex__just gap2">
+                                <button class="showMore_btn btn_base">
+                                    Xem chi tiết
+                                </button>
+                                <button class="orderNow_btn btn_base">
+                                    Mua ngay
+                                </button>
+                            </div>
+                        </figure>
+                        <figure class="item_wrapped">
+                            <div class="item_wrapped__img-wrap">
+                                <img src="{{ asset('storage/imgs/product_img.png') }}" alt="product_img">
+                            </div>
+                            <div class="item_wrapped__desc-wrap d-flex__wrap d-flex__just">
+                                <div class="item_wrapped__desc-wrap__title">
+                                    Vải áo dài họa tiết công vũ xuân hạ
+                                </div>
+                                <div class="item_wrapped__desc-wrap__code">
+                                    Mã sản phẩm: HT0001
+                                </div>
+                                <div class="item_wrapped__desc-wrap__price">
+                                    230.000 VNĐ
+                                </div>
+                            </div>
+                            <div class="item_wrapped__actions-wrap d-flex__nowrap d-flex__just gap2">
+                                <button class="showMore_btn btn_base">
+                                    Xem chi tiết
+                                </button>
+                                <button class="orderNow_btn btn_base">
+                                    Mua ngay
+                                </button>
+                            </div>
+                        </figure>
+                        <figure class="item_wrapped">
+                            <div class="item_wrapped__img-wrap">
+                                <img src="{{ asset('storage/imgs/product_img.png') }}" alt="product_img">
+                            </div>
+                            <div class="item_wrapped__desc-wrap d-flex__wrap d-flex__just">
+                                <div class="item_wrapped__desc-wrap__title">
+                                    Vải áo dài họa tiết công vũ xuân hạ
+                                </div>
+                                <div class="item_wrapped__desc-wrap__code">
+                                    Mã sản phẩm: HT0001
+                                </div>
+                                <div class="item_wrapped__desc-wrap__price">
+                                    230.000 VNĐ
+                                </div>
+                            </div>
+                            <div class="item_wrapped__actions-wrap d-flex__nowrap d-flex__just gap2">
+                                <button class="showMore_btn btn_base">
+                                    Xem chi tiết
+                                </button>
+                                <button class="orderNow_btn btn_base">
+                                    Mua ngay
+                                </button>
+                            </div>
+                        </figure>
+                        <figure class="item_wrapped">
+                            <div class="item_wrapped__img-wrap">
+                                <img src="{{ asset('storage/imgs/product_img.png') }}" alt="product_img">
+                            </div>
+                            <div class="item_wrapped__desc-wrap d-flex__wrap d-flex__just">
+                                <div class="item_wrapped__desc-wrap__title">
+                                    Vải áo dài họa tiết công vũ xuân hạ
+                                </div>
+                                <div class="item_wrapped__desc-wrap__code">
+                                    Mã sản phẩm: HT0001
+                                </div>
+                                <div class="item_wrapped__desc-wrap__price">
+                                    230.000 VNĐ
+                                </div>
+                            </div>
+                            <div class="item_wrapped__actions-wrap d-flex__nowrap d-flex__just gap2">
+                                <button class="showMore_btn btn_base">
+                                    Xem chi tiết
+                                </button>
+                                <button class="orderNow_btn btn_base">
+                                    Mua ngay
+                                </button>
+                            </div>
+                        </figure>
+                        <figure class="item_wrapped">
+                            <div class="item_wrapped__img-wrap">
+                                <img src="{{ asset('storage/imgs/product_img.png') }}" alt="product_img">
+                            </div>
+                            <div class="item_wrapped__desc-wrap d-flex__wrap d-flex__just">
+                                <div class="item_wrapped__desc-wrap__title">
+                                    Vải áo dài họa tiết công vũ xuân hạ
+                                </div>
+                                <div class="item_wrapped__desc-wrap__code">
+                                    Mã sản phẩm: HT0001
+                                </div>
+                                <div class="item_wrapped__desc-wrap__price">
+                                    230.000 VNĐ
+                                </div>
+                            </div>
+                            <div class="item_wrapped__actions-wrap d-flex__nowrap d-flex__just gap2">
+                                <button class="showMore_btn btn_base">
+                                    Xem chi tiết
+                                </button>
+                                <button class="orderNow_btn btn_base">
+                                    Mua ngay
+                                </button>
+                            </div>
+                        </figure>
+                        <figure class="item_wrapped">
+                            <div class="item_wrapped__img-wrap">
+                                <img src="{{ asset('storage/imgs/product_img.png') }}" alt="product_img">
+                            </div>
+                            <div class="item_wrapped__desc-wrap d-flex__wrap d-flex__just">
+                                <div class="item_wrapped__desc-wrap__title">
+                                    Vải áo dài họa tiết công vũ xuân hạ
+                                </div>
+                                <div class="item_wrapped__desc-wrap__code">
+                                    Mã sản phẩm: HT0001
+                                </div>
+                                <div class="item_wrapped__desc-wrap__price">
+                                    230.000 VNĐ
+                                </div>
+                            </div>
+                            <div class="item_wrapped__actions-wrap d-flex__nowrap d-flex__just gap2">
+                                <button class="showMore_btn btn_base">
+                                    Xem chi tiết
+                                </button>
+                                <button class="orderNow_btn btn_base">
+                                    Mua ngay
+                                </button>
+                            </div>
+                        </figure>
                         <figure class="item_wrapped">
                             <div class="item_wrapped__img-wrap">
                                 <img src="{{ asset('storage/imgs/product_img.png') }}" alt="product_img">
@@ -82,11 +230,13 @@
                             </div>
                         </figure>
                     </section>
-                </div>
+                </div> --}}
             </div>
         </main>
 
-        <footer></footer>
+        <footer>
+            @include('layouts.footer')
+        </footer>
         {{-- <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">

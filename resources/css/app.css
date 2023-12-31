@@ -14,8 +14,8 @@
     --text-size: 1.6rem;
 
     /* default layout width, height */
-    --default-layout-width: 320px;
-    --default-header-height: 60px;
+    --default-layout-width: 1400px;
+    --default-header-height: 83px;
 }
 
 * {
@@ -36,6 +36,10 @@ body {
     line-height: 1.5;
     text-rendering: optimizeSpeed;
     color: var(--text-color);
+}
+
+header {
+    height: var(--default-header-height);
 }
 
 button, input {
@@ -63,8 +67,6 @@ ul > li {
 main {
     max-width: var(--default-layout-width);
     margin: auto;
-    min-height: 500px;
-    background-color: var(--second-color);
 }
 
 img {
@@ -168,6 +170,10 @@ img {
 .d-flex__around {
     align-items: center;
     justify-content: space-around;
+}
+
+.gap {
+    gap: 4px;
 }
 
 .gap2 {

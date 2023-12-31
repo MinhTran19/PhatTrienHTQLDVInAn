@@ -17,6 +17,8 @@ mix.js('resources/js/app.js', 'public/js')
         //
     ]).postCss('resources/css/library.css', 'public/css', [
         //
+    ]).postCss('resources/css/header.css', 'public/css', [
+        //
     ]).postCss('resources/css/responsive.css', 'public/css', [
         //
     ]);
